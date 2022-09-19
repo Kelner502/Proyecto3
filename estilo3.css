@@ -1,0 +1,101 @@
+/* INSERTO MARGEN UNIVERSAL */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+/* LE DOY TAMAÑO AL EMOJIS */
+#emojis{
+font-size: 800%;    
+}
+/* NOMBRO UN COLOR PARA DESPUES LLAMARLO COMO VARIABLE */
+:root {
+    --bg-color: #303134;
+    --color-text: #cad2db;
+    --box-shadow: 5px 5px 5px 0 rgb(32,33,36,1),
+                  -1px -1px 4px 0 rgb(32,33,36,1);
+}
+/* ESTILO AL CUERPO DE LA PAGINA */
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+/* LE INSETO ESTILO A MI ETIQUETA PADRE  */
+.container {
+    width: 35%;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px 0 rgb(32, 33, 36,1),
+                -1px -1px 3px 0 rgb(32, 33, 36,1);
+    border-radius: 1rem;
+    text-align: center;
+    color: var(--color-text);
+    padding: 1rem;
+    background-color: var(--bg-color);
+}
+/* INSETO COLOR A MIS BOTONES  */
+.color-nom {
+    background-color: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+
+}
+.color-nom {
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    margin: 2rem 0 2rem 0;
+
+}
+/* INSETO ESTILO A MIS BOTON  DE RESET */
+
+#reset{
+
+background: #2b2c2e;
+    border-radius: .5rem;
+    padding: .5rem 2rem;
+    margin: 1rem ;  
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.7); 
+   color: #cad2db;
+   font-family: fantasy;
+   font-size: 100%;
+   border: solid white;
+}
+#reset:hover {
+    color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+  transition: all 0.2s ease;
+}
+/* INSERTO ESTILO AMI BOTON PARA CAMBIAR COLORES */
+#boton{
+    background: #2b2c2e;
+    border-radius: .5rem;
+    padding: .5rem 2rem;
+    margin: 1rem ;  
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.7); 
+    color: #cad2db;
+    font-family: fantasy;
+    font-size: 100%;
+    border: solid white; 
+}
+#boton:hover {
+    color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+  transition: all 0.2s ease;
+}
+
+
+/* ESTILO PARA PODE VISUALISARLO EN MOVIL */
+@media screen and (max-width:750px) {
+    .container {
+        width: 90%;
+    }
+}
+
